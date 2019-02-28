@@ -6,13 +6,13 @@ weight: 5
 
 In this template, we defined four categories of theorem class environments
 
-+ __Theorem Environment__, including title and contents, numbering within chapter. There are three types depending on the format
-    + deﬁnition environment, the color is main;
-    + theorem, lemma, corollary environment, the color is second;
-    + proposition environment, the color is third.
-+ __Example Environments__, including example, exercise, problem environment, auto numering within chapter.
-+ __Proof Environment__, including proof, note environment, they contain introductory symbol (note environment) or ending symbol (proof environment).
-+ __Conclusion Environments__, including conclusion, assumption, property, remark, solution environment, all of these begin with boldfaced words, and the contents are the same as a normal paragraph.
++ __Theorem Environment__: including title and contents, numbering within chapter. There are three types depending on the format
+    + _definition_ environment, the color is main;
+    + _theorem_, _lemma_, _corollary_ environment, the color is second;
+    + _proposition_ environment, the color is third.
++ __Example Environments__: including _example_, _exercise_, _problem_ environment, auto numering within chapter.
++ __Proof Environment__: including _proof_, _note_ environment, they contain introductory symbol (_note_ environment) or ending symbol (_proof_ environment).
++ __Conclusion Environments__: including _conclusion_, _assumption_, _property_, _remark_, _solution_ environment, all of these begin with boldfaced words, and the contents are the same as a normal paragraph.
 
 ## Theorem Class Environments
 

@@ -58,7 +58,7 @@ The difference is that the chapter heading is displayed on a single line (hang) 
       
       <guid>https://elegantlatex.org/en/elegantbook/theoremclassenvironments/</guid>
       <description>In this template, we defined four categories of theorem class environments
- Theorem Environment, including title and contents, numbering within chapter. There are three types depending on the format  deﬁnition environment, the color is main; theorem, lemma, corollary environment, the color is second; proposition environment, the color is third.  Example Environments, including example, exercise, problem environment, auto numering within chapter. Proof Environment, including proof, note environment, they contain introductory symbol (note environment) or ending symbol (proof environment).</description>
+ Theorem Environment: including title and contents, numbering within chapter. There are three types depending on the format  definition environment, the color is main; theorem, lemma, corollary environment, the color is second; proposition environment, the color is third.  Example Environments: including example, exercise, problem environment, auto numering within chapter. Proof Environment: including proof, note environment, they contain introductory symbol (note environment) or ending symbol (proof environment).</description>
     </item>
     
     <item>
