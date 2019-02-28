@@ -14,6 +14,13 @@
 	"content": "本模板增加了护眼模式，默认为不开启，开启的方法如下：\n\\documentclass[geye]{elegantnote} % 或者 \\documentclass[mode=geye]{elegantnote}  评论： 此次更新只添加了护眼模式（绿豆沙色背景），如果您有希望增加其他颜色，可以在 Github/ElegantNote 创建 issues 或者提交 pull request。\n"
 },
 {
+	"uri": "https://elegantlatex.org/cn/elegantbook/compilationmethods/",
+	"title": "编译方式",
+	"tags": [],
+	"description": "编译方式",
+	"content": " 本模板基于基础的 book 文类，所以 book 的选项对于本模板也是有效的。默认编码为 UTF-8，推荐使用 TeX Live 编译。本文编写环境为 Win10 (64bit) + TeX Live 2018，支持 PDFLaTeX 以及 XeLaTeX 编译。\n选择 PDFLaTeX 编译 如果你使用 PDFLaTeX 编译，默认的 Computer Modern 字体被换成了 newtx 系列字体，默认的字体字号是 12 pt。关于字体设置的宏包主要用到了：\n newtxtext 用于文档正文字体，类似于 Times New Roman 字体。 newtxmath 用于数学字体，搭配 newtxtext 非常合适。 FiraMono 用于打字机字体，并使用了 scale=0.7 选项。 ctex 用于中文字体设置，并使用了 scheme=plain 选项。  一次完整的编译：PDFLaTeX -\u0026gt; BibTeX -\u0026gt; PDFLaTeX*2。\n选择 XeLaTeX 编译 如果你选择 XeLaTeX 编译的话，那么设置字体的宏包为 fontspec 和 xeCJK。由于模板中使用的字体是 Windows 中的字体，所以如果你使用其他操作系统，比如 Linux 或者 Mac OS，那么你需要把所用字体替换为你系统中的字体。设置字体的命令：\n\\RequirePackage{fontenc} \\RequirePackage[no-math]{fontspec} \\setmainfont{Times New Roman}[NFSSFamily=ntxtlf] \\setsansfont{Arial} %\\setmonofont[Scale=0.7]{Courier New} \\RequirePackage{xeCJK} \\RequirePackage{xunicode} \\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun} \\setCJKsansfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi} \\setCJKmonofont[BoldFont={SimHei},ItalicFont={KaiTi},Scale=0.7]{Microsoft YaHei} \\XeTeXlinebreaklocale ”zh” \\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt \\RequirePackage{newtxmath}  一次完整的编译：XeLaTeX -\u0026gt; BibTeX -\u0026gt; XeLaTeX*2。\n"
+},
+{
 	"uri": "https://elegantlatex.org/cn/elegantpaper/languages/",
 	"title": "语言模式",
 	"tags": [],
@@ -25,7 +32,7 @@
 	"title": "ElegantBook",
 	"tags": [],
 	"description": "",
-	"content": "等模板修正传至 CTAN 之后再更新这部分内容！\n"
+	"content": " 值此版本发行之际，我们 ElegantLaTeX 项目组向大家重新介绍一下我们的工作，我们致力于打造一系列美观、优雅、简便的模板方便用户使用。ElegantLaTeX 系列模板目前由 ElegantNote，ElegantBook，ElegantPaper 组成，分别用于排版笔记，书籍和工作论文。这些子项目的名词是一体的，请在使用这些名词的时候不要将其断开（如 Elegant Note 是不正确的写法）。并且，ElegantLaTeX Book 指的即是 ElegantBook。\n最新版本下载地址：Github:ElegantBook/releases。本文将介绍本模板的一些设置内容以及基本使用方法。如果您有其他问题，建议或者意见，欢迎联系我们。\nElegantBook 更新说明 在这几年间，我们收到了很多用户的反馈，主要的问题涉及到字体安装，编码支持，定理浮动，定理跨页，交叉引用等等。我们思前想后，原先让用户安装字体以追求视觉上的美观并不完美，用户陷入了巨大的麻烦，这违背了我们的模板初衷。因此我们在新版中删除了这部分，用户无需安装任何字体。让我们来看下此次 ElegantBook 模板 3.x 更新的主要内容有：\n 删除了自定义字体设置，改用 ctex 宏包或者系统默认字体； 模板拆分为中英文模式（lang=cn/en）； PDFLaTeX 与 XeLaTeX 支持； 使用 tcolorbox 宏包改写定理类环境，可跨页； 定理类环境名字更新，修复定理环境交叉引用； 颜色名字更新，统一链接颜色； 重新绘制 ElegantLaTeX 的 Logo； 更新封面与装饰物，删除水印； 修正附录相关内容； 增加灰色主题 color=plain； 增加代码高亮； 美化列表环境。 ！  "
 },
 {
 	"uri": "https://elegantlatex.org/cn/elegantpaper/fontsettings/",
@@ -42,6 +49,13 @@
 	"content": "为了让笔记方便在不同设备上阅读，免去切边，缩放等操作，本模板适配不同的屏幕大小，分别为 Pad，Kindle，PC，A4。不同屏幕的选择为\n\\documentclass[device=pad]{elegantnote} \\documentclass[device=kindle]{elegantnote} \\documentclass[device=pc]{elegantnote} \\documentclass[device=normal]{elegantnote}  注： 也可以采取直接赋值的方法选择屏幕，比如：\n\\documentclass[pad]{elegantnote} \\documentclass[kindle]{elegantnote} \\documentclass[pc]{elegantnote} \\documentclass[normal]{elegantnote}  注： 如果想要得到普通的 A4 纸张大小的 PDF，需要选择 device=normal，而不是选择 device=pc，因为 device=pc 实际上设置的是电脑双页模式。\n"
 },
 {
+	"uri": "https://elegantlatex.org/cn/elegantbook/languages/",
+	"title": "语言模式",
+	"tags": [],
+	"description": "语言模式",
+	"content": "本模板内含两套语言环境，改变语言环境会改变图表标题的引导词（图，表），文章结构词（比如目录，参考文献等），以及定理环境中的引导词（比如定理，引理等）。不同语言模式的启用如下：\n\\documentclass[cn]{elegantbook} \\documentclass[lang=cn]{elegantbook} \\documentclass[en]{elegantbook} \\documentclass[lang=en]{elegantbook}  注： 不管选用中文环境（lang=cn）还是英文环境（lang=en）均可输入中文。另外如果在笔记中使用了抄录环境（lstlisting），并且其中包括了中文，请务必使用 XeLaTeX 编译。\n"
+},
+{
 	"uri": "https://elegantlatex.org/cn/elegantpaper/",
 	"title": "ElegantPaper",
 	"tags": [],
@@ -54,6 +68,13 @@
 	"tags": [],
 	"description": "自定义命令",
 	"content": "在此模板中，并没有修改任何默认的命令或者环境，所以，你可以在此模板使用原来的命令和 环境。另外，我自定义了 4 个命令：\n \\email：创建邮箱地址的链接； \\figref：用法和 \\ref 类似，但是会在插图的标题前添加 图 n ； \\tabref：用法和 \\ref 类似，但是会在表格的标题前添加 表 n； \\keywords：为摘要环境添加关键词。  "
+},
+{
+	"uri": "https://elegantlatex.org/cn/elegantbook/colorthemes/",
+	"title": "颜色主题",
+	"tags": [],
+	"description": "颜色主题",
+	"content": "本模板内置 4 组颜色主题，分别为 green（默认）、cyan、blue、plain，另外还 有一个自定义的选项 nocolor。调用颜色主题 green 的方法为\n\\documentclass[green]{elegantbook} %or \\documentclass[color=green]{elegantbook}  其中 plain 主题为全灰色。如果需要自定义颜色的话请选择 nocolor 选项或者使用 color=none，然后在导言区定义 main、second、third 颜色，具体方法如下：\n\\definecolor{main}{RGB}{70,70,70} \\definecolor{second}{RGB}{115,45,2} \\definecolor{third}{RGB}{0,80,80}  "
 },
 {
 	"uri": "https://elegantlatex.org/cn/elegantnote/colorthemes/",
@@ -70,11 +91,25 @@
 	"content": "你可以和往常一样使用列表环境（itemize、enumerate、description），示例如下：\n\\begin{itemize} \\item 春花秋月何时了, 往事知多少? \\item 小楼昨夜又东⻛, 故国不堪回首月明中。 \\item 雕栏玉砌应犹在, 只是朱颜改。 \\item 问君能有几多愁?恰似一江春水向东流。 \\end{itemize}   春花秋月何时了, 往事知多少? 小楼昨夜又东⻛, 故国不堪回首月明中。 雕栏玉砌应犹在, 只是朱颜改。 问君能有几多愁?恰似一江春水向东流。  "
 },
 {
+	"uri": "https://elegantlatex.org/cn/elegantbook/displaystyles/",
+	"title": "章标题显示风格",
+	"tags": [],
+	"description": "章标题显示风格",
+	"content": "本模板内置 2 套章标题显示风格，包含 hang（默认）与 display 两种风格，区 别在于章标题单行显示（hang）与双行显示（display），本说明使用了 hang。调用方式为\n\\documentclass[hang]{elegantbook} %or \\documentclass[titlestyle=hang]{elegantbook}  "
+},
+{
 	"uri": "https://elegantlatex.org/cn/elegantnote/languages/",
 	"title": "语言模式",
 	"tags": [],
 	"description": "语言模式",
 	"content": "本模板内含两套语言环境，改变语言环境会改变图表标题的引导词（图，表），文章结构词（比如目录，参考文献等），以及定理环境中的引导词（比如定理，引理等）。不同语言模式的启用如下：\n\\documentclass[cn]{elegantnote} % 中文模式 \\documentclass[lang=cn]{elegantnote} \\documentclass[en]{elegantnote} % 英文模式 \\documentclass[lang=en]{elegantnote}  注： 不管选用中文环境还是英文环境均可输入中文。另外如果在笔记中使用了抄录环境（lstlisting），并且其中包括了中文，请务必使用 XeLaTeX 编译。本说明文档也只能通过 XeLaTeX 编译。\n"
+},
+{
+	"uri": "https://elegantlatex.org/cn/elegantbook/theoremclassenvironments/",
+	"title": "定理类环境",
+	"tags": [],
+	"description": "定理类环境",
+	"content": " 在我们这个模板中，定义了四大类环境\n 定理类环境：包含标题和内容两部分，全部定理类环境的编号均以章节编号。根据格式的不同分为 3 种  definition 环境，颜色为 main； theorem、lemma、corollary 环境，颜色为 second； proposition 环境，颜色为 third。  示例类环境：有 example、exercise、problem 环境（对应于例，练习，例题），自动编号，编号以章节为单位。 证明类环境：，有 proof、note 环境，特点是，有引导符或者结尾符，note 环境有引导符号，proof 环境有证明完毕符号。 结论类环境：有 conclusion、assumption、property，remark、solution 环境，三者均以粗体的引导词为开头，和普通段落格式一致。  评论： 在选用 lang=cn 时，定理类环境的引导词全部会改为中文。\n定理类环境的使用 由于本模板使用了 tcolorbox 宏包来定制定理类环境，所以和普通的定理环境的使用有些许区别，定理的使用方法如下：\n\\begin{theorem}{\u0026lt;theorem name\u0026gt;}{\u0026lt;label\u0026gt;} The content of theorem. \\end{theorem}  第一个必选项 \u0026lt;theorem name\u0026gt; 是定理的名字，第二个必选项 \u0026lt;label\u0026gt; 是交叉引 用时所用到的标签，交叉引用的方法为 \\ref{thm:label}。请注意，交叉引用时必 须加上前缀 thm:。其他相同用法的定理类环境有：\n   环境名 标签名 前缀 交叉引用     definition label def \\ref{def:label}   theorem label thm \\ref{thm:label}   lemma label lem \\ref{lem:label}   corrlary label cor \\ref{cor:label}   proposition label pro \\ref{pro:label}    其他数学环境的使用 其他三种数学环境因为没有选项，可以直接使用，比如 example 环境\n\\begin{example} This is the content of example environment. \\end{example}  这几个都是同一类环境，区别在于\n 示例环境（example）、练习（exercise）与例题（problem）章节自动编号； 注意（note）环境有提醒引导符，证明（proof）环境有证明结束符； 结论（conclusion）等环境都是普通段落环境，引导词加粗。  "
 },
 {
 	"uri": "https://elegantlatex.org/cn/elegantpaper/graphics/",
@@ -98,11 +133,25 @@
 	"content": "此模板采用了 amsthm 中的定理样式，使用了 4 类定理样式，所包含的环境分别为\n 定理类：theorem，lemma，proposition，corollary； 定义类：definition，conjecture，example； 备注类：remark，note，case； 证明类：proof。  评论： 在选用 lang=cn 时，定理类环境的引导词全部会改为中文。\n"
 },
 {
+	"uri": "https://elegantlatex.org/cn/elegantbook/coverlogo/",
+	"title": "封面与徽标",
+	"tags": [],
+	"description": "封面与徽标",
+	"content": "本模板使用的封面图片来源于 pixabay.com1，图片完全免费，可用于任何场 景。封面图片的尺寸为 1280*1024, 更换图片的时候请 严格 按照封面图片尺寸进 行裁剪。推荐一个免费的在线图片裁剪网站 befunky.com。\n本文用到的 Logo 比例为 1:1，也即正方形图片，在更换图片的时候请选择合适的图片进行替换。\n1: 感谢 ChinaTEX 提供免费图源网站，另外还推荐 pexels.com。\n"
+},
+{
 	"uri": "https://elegantlatex.org/cn/elegantpaper/tables/",
 	"title": "插入表格",
 	"tags": [],
 	"description": "插入表格",
 	"content": "我强烈建议你使用 booktabs 宏包，这个宏包有三个命令 \\toprule、\\midrule 和 \\bottomrule 能方便你制作三线表。下面是一个示例：\n\\begin{table}[htbp] \\small \\centering \\caption{燃油效率与汽⻋价格} \\begin{tabular}{lcc} \\toprule \u0026amp; (1) \u0026amp; (2) \\\\ \\midrule 燃油效率 \u0026amp; -238.90*** \u0026amp; -49.51 \\\\ \u0026amp; (53.08) \u0026amp; (86.16) \\\\ 汽车重量 \u0026amp; \u0026amp; 1.75*** \\\\ \u0026amp; \u0026amp; (0.641) \\\\ 常数项 \u0026amp; 11,253*** \u0026amp; 1,946 \\\\ \u0026amp; (1,171) \u0026amp; (3,597) \\\\ 观测数 \u0026amp; 74 \u0026amp; 74 \\\\ $R^2$ \u0026amp; 0.220 \u0026amp; 0.293 \\\\ \\bottomrule \\multicolumn{3}{l}{\\scriptsize 括号内为标准误} \\\\ \\multicolumn{3}{l}{\\scriptsize *** p\u0026lt;0.01, ** p\u0026lt;0.05, * p\u0026lt;0.1} \\\\ \\end{tabular}% \\label{tab:reg}% \\end{table}%  "
+},
+{
+	"uri": "https://elegantlatex.org/cn/elegantbook/lists/",
+	"title": "列表",
+	"tags": [],
+	"description": "列表",
+	"content": "本模板借助于 tikz 定制了 itemize 和 enumerate 环境，其中 itemize 环境修改 了 3 层嵌套，而 enumerate 环境修改了 4 层嵌套（仅改变颜色）。示例如下\n"
 },
 {
 	"uri": "https://elegantlatex.org/cn/elegantpaper/bibliography/",
@@ -119,11 +168,32 @@
 	"content": "安装之后即可使用，下面是一个示例：\n\\documentclass[geye,green,pad,cn]{elegantnote} \\title{一个笔记示例} \\author{ddswhu} \\institute{Elegant\\LaTeX{} 项目组} \\version{1.00} \\date{2019 年 2 月 3 日} \\begin{document} \\maketitle \\section{介绍} 介绍部分内容。 \\end{document}  "
 },
 {
+	"uri": "https://elegantlatex.org/cn/elegantbook/bibliography/",
+	"title": "参考文献",
+	"tags": [],
+	"description": "参考文献",
+	"content": "此模板使用了 BibTeX 来生成参考文献，默认使用的文献样式（bib style）是 aer。参考文献示例：Chen et al. (2018) 使用了中国一个大型的 P2P 平台（人人贷）的数据来检验男性投资者和女性投资者在投资表现上是否有显著差异。\n你可以在谷歌学术，Mendeley，Endnote 中获得文献条目（bib item），然后把它们添加到 reference.bib 中。在文中引用的时候，引用它们的键值（bib key）即可。注意需要在编译的过程中添加 BibTeX 编译。如果你想在参考文献中添加未引用的文献，可以使用\n\\nocite{EINAV2010,Havrylchyk2018}  "
+},
+{
 	"uri": "https://elegantlatex.org/cn/elegantpaper/minimalexample/",
 	"title": "最小示例",
 	"tags": [],
 	"description": "最小示例",
 	"content": "在这部分，我提供一个示例文档：\n\\documentclass[lang=cn]{elegantpaper} % 标题信息 \\title{工作论文示例展示} \\author{ddswhu} \\institute{Elegant\\LaTeX{} 项目组} \\version{1.00} \\date{\\today} \\begin{document} \\maketitle \\begin{abstract} 在这里写摘要。 \\keywords{关键词1，关键词2} \\end{abstract} \\section{引言} 这一部分是引言的内容。 \\section{结论} 这是结论部分。 % 在参考文献部分显示未引用的文献 \\nocite{ref1, ref2} % 生成参考文献 \\bibliography{wpref} \\end{document}  "
+},
+{
+	"uri": "https://elegantlatex.org/cn/elegantbook/preface/",
+	"title": "序章",
+	"tags": [],
+	"description": "序章",
+	"content": "如果你想在第一章前面添加序章，不改变原本章节序号，你可以在第一章内容前面使用\n\\chapter*{序章} \\addcontentsline{toc}{chapter}{序章} \\markboth{序章}{} 序章的内容。  "
+},
+{
+	"uri": "https://elegantlatex.org/cn/elegantbook/minimalexample/",
+	"title": "最小示例",
+	"tags": [],
+	"description": "最小示例",
+	"content": "安装之后即可使用，下面是一个示例：\n\\documentclass{elegantbook} % title info \\title{Title} \\subtitle{Subtitle is here} % bio info \\author{Your Name} \\institute{XXX University} \\date{\\today} % extra info \\version{1.00} \\equote{Victory won\\rq t come to us unless we go to it. --- M. Moore} \\logo{logo.png} \\cover{cover.jpg} \\begin{document} \\maketitle \\tableofcontents \\mainmatter \\hypersetup{pageanchor=true} % add preface chapter here if needed \\chapter{Example Chapter Title} The content of chapter one. \\bibliography{reference} \\appendix \\chapter{Appendix Chapter Title} The content of appendix 1. \\end{document}  "
 },
 {
 	"uri": "https://elegantlatex.org/cn/categories/",

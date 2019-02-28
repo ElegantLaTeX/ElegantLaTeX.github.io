@@ -6,10 +6,109 @@
     <description>Recent content in ElegantBook on Documentation for ElegantLaTeX Templates</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 09 Apr 2016 16:50:16 +0200</lastBuildDate>
     
 	<atom:link href="https://elegantlatex.org/en/elegantbook/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Compilation Methods</title>
+      <link>https://elegantlatex.org/en/elegantbook/compilationmethods/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/compilationmethods/</guid>
+      <description>This template is based on the Standard LaTeX book class, so the options of book class also work. The default encoding is UTF-8, and TeX Live is recommended. The test environment is Win10 + TeX Live 2018.
+Compile with PDFLaTeX If you choose PDFLaTeX to process your book, the default article font computer modern has changed to newtx series, and the default font size is set to 12pt. The fonts are settings with:</description>
+    </item>
+    
+    <item>
+      <title>Languages</title>
+      <link>https://elegantlatex.org/en/elegantbook/languages/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/languages/</guid>
+      <description>We deﬁned one option named lang, this option has two alternative values, lang=en (default) or lang=cn. lang=cn will make the caption of ﬁgure/table, abstract name, refname etc. Chinese, while lang=en will keep all these stuff English, as the default article class sets. You can use this option as
+\documentclass[cn]{elegantbook} \documentclass[lang=cn]{elegantbook} \documentclass[en]{elegantbook} \documentclass[lang=en]{elegantbook}  Remark: You can input Chinese Character in either lang=en or lang=cn. If you are using (lstlisting) environment, and it contains Chinese characters, please use XeLaTeX.</description>
+    </item>
+    
+    <item>
+      <title>Color Themes</title>
+      <link>https://elegantlatex.org/en/elegantbook/colorthemes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/colorthemes/</guid>
+      <description>This template contains 4 color themes,they are green (default), cyan, blue, plain, and there is a customization color option nocolor. You can choose green with
+\documentclass[green]{elegantbook} %or \documentclass[color=green]{elegantbook}  where plain theme is gray for all theorem class environments and paper structures. If you want to customize the colors, please select nocolor or use color=none , then define the main, second, and third colors in the preamble section as follows:</description>
+    </item>
+    
+    <item>
+      <title>Display Styles</title>
+      <link>https://elegantlatex.org/en/elegantbook/displaystyles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/displaystyles/</guid>
+      <description>This template contains 2 sets of title display styles,which including hang(default) and display style,
+The difference is that the chapter heading is displayed on a single line (hang) and on a double line (display) , and this guide uses hang. To change display style
+\documentclass[hang]{elegantbook} %or \documentclass[titlestyle=hang]{elegantbook}  </description>
+    </item>
+    
+    <item>
+      <title>Theorem Class Environments</title>
+      <link>https://elegantlatex.org/en/elegantbook/theoremclassenvironments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/theoremclassenvironments/</guid>
+      <description>In this template, we defined four categories of theorem class environments
+ Theorem Environment, including title and contents, numbering within chapter. There are three types depending on the format  deﬁnition environment, the color is main; theorem, lemma, corollary environment, the color is second; proposition environment, the color is third.  Example Environments, including example, exercise, problem environment, auto numering within chapter. Proof Environment, including proof, note environment, they contain introductory symbol (note environment) or ending symbol (proof environment).</description>
+    </item>
+    
+    <item>
+      <title>Cover and Logo</title>
+      <link>https://elegantlatex.org/en/elegantbook/coverlogo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/coverlogo/</guid>
+      <description>The cover image used in this template is from pixabay.com1. The image is completely free and can be used in any circumstance. The cover image size is 1280*1024, when changing the cover, please crop it according to the size of the cover picture strictly. Here is a free online image clipping site: befunky.com.
+This Logo ratio is 1:1, that is square picture. In the replacement of the picture, please choose the appropriate picture to replace.</description>
+    </item>
+    
+    <item>
+      <title>Lists</title>
+      <link>https://elegantlatex.org/en/elegantbook/lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/lists/</guid>
+      <description>This template uses tikz to customize itemize and enumerate environments, the itemize environment customized to the third depth, and enumerate environment customized to fourth depth. The effect is as follows</description>
+    </item>
+    
+    <item>
+      <title>Bibliography</title>
+      <link>https://elegantlatex.org/en/elegantbook/bibliography/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/bibliography/</guid>
+      <description>This template uses BibTeX to generate the bibliography, the default bibliography style is aer. Let’s take a glance at the citation effect, Chen et al. (2018) use data from a major peer-to-peer lending marketplace in China to study whether female and male investors evaluate loan performance differently.
+If you want to use BibTeX, you must create a file named reference.bib, and add bib items (from Google Scholar, Mendeley, EndNote, and etc.</description>
+    </item>
+    
+    <item>
+      <title>Preface</title>
+      <link>https://elegantlatex.org/en/elegantbook/preface/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/preface/</guid>
+      <description>If you want to add a preface before the first chapter without changing the number of chapter, you can use it before the first chapter
+\chapter*{Preface} \addcontentsline{toc}{chapter}{Preface} \markboth{Preface}{} The content of Preface.  </description>
+    </item>
+    
+    <item>
+      <title>Minimal Example</title>
+      <link>https://elegantlatex.org/en/elegantbook/minimalexample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://elegantlatex.org/en/elegantbook/minimalexample/</guid>
+      <description>Here is a minimal example.
+\documentclass{elegantbook} % title info \title{Title} \subtitle{Subtitle is here} % bio info \author{Your Name} \institute{XXX University} \date{\today} % extra info \version{1.00} \equote{Victory won\rq t come to us unless we go to it. --- M. Moore} \logo{logo.png} \cover{cover.jpg} \begin{document} \maketitle \tableofcontents \mainmatter \hypersetup{pageanchor=true} % add preface chapter here if needed \chapter{Example Chapter Title} The content of chapter one. \bibliography{reference} \appendix \chapter{Appendix Chapter Title} The content of appendix 1.</description>
+    </item>
     
   </channel>
 </rss>

@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://elegantlatex.org/en/elegantbook/compilationmethods/",
+	"title": "Compilation Methods",
+	"tags": [],
+	"description": "Compilation Methods",
+	"content": " This template is based on the Standard LaTeX book class, so the options of book class also work. The default encoding is UTF-8, and TeX Live is recommended. The test environment is Win10 + TeX Live 2018.\nCompile with PDFLaTeX If you choose PDFLaTeX to process your book, the default article font computer modern has changed to newtx series, and the default font size is set to 12pt. The fonts are settings with:\n newtxtext package for text fonts, similar to Times New Roman font. newtxmath package for math fonts, close to times package. FiraMono package for typewriter fonts, with option scale=0.7. ctex package for Chinese fonts, with option scheme=plain.  A full compilation chain： PDFLaTeX -\u0026gt; BibTeX -\u0026gt; PDFLaTeX*2.\nCompile with XeLaTeX If you choose XeLaTeX to process your book, we use fontspec package and xeCJK package. we used fonts available in Windows, if you are using Linux or Mac OS, please substitute these fonts with that of your system.\n\\RequirePackage{fontenc} \\RequirePackage[no-math]{fontspec} \\setmainfont{Times New Roman}[NFSSFamily=ntxtlf] \\setsansfont{Arial} %\\setmonofont[Scale=0.7]{Courier New} \\RequirePackage{xeCJK} \\RequirePackage{xunicode} \\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun} \\setCJKsansfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi} \\setCJKmonofont[BoldFont={SimHei},ItalicFont={KaiTi},Scale=0.7]{Microsoft YaHei} \\XeTeXlinebreaklocale \u0026quot;zh\u0026quot; \\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt \\RequirePackage{newtxmath}  A full compilation chain： XeLaTeX -\u0026gt; BibTeX -\u0026gt; XeLaTeX*2.\n"
+},
+{
 	"uri": "https://elegantlatex.org/en/elegantnote/",
 	"title": "ElegantNote",
 	"tags": [],
@@ -21,13 +28,6 @@
 	"content": "I deﬁned one option named lang, this option has two alternative values, lang=en (default) or lang=cn . lang=cn will make the caption of ﬁgure/table, abstract name, refname etc. Chinese, while lang=en will keep all these stuff English, as the default article class sets. You can use this option as\n\\documentclass[lang=en]{elegantpaper} \\documentclass{en}{elegantpaper} % both ok  "
 },
 {
-	"uri": "https://elegantlatex.org/en/elegantbook/",
-	"title": "ElegantBook",
-	"tags": [],
-	"description": "",
-	"content": "On the road.\n"
-},
-{
 	"uri": "https://elegantlatex.org/en/elegantnote/deviceoptions/",
 	"title": "Device Options",
 	"tags": [],
@@ -35,11 +35,32 @@
 	"content": "To make the notes more comfortable to read, we designed four output options (of different sizes) that correspond to different reading devices: Pad, Kindle, PC and A4paper. The options of output for different devices are\n\\documentclass[device=pad]{elegantnote} \\documentclass[device=kindle]{elegantnote} \\documentclass[device=pc]{elegantnote} \\documentclass[device=normal]{elegantnote}  Note: You can also select the device by using a direct assignment method, such as:\n\\documentclass[pad]{elegantnote} \\documentclass[kindle]{elegantnote} \\documentclass[pc]{elegantnote} \\documentclass[normal]{elegantnote}  Note that if you want a normal A4paper size PDF, you need to select device=normal instead of device=pc , because device=pc is actually set to double page mode on your computer.\n"
 },
 {
+	"uri": "https://elegantlatex.org/en/elegantbook/",
+	"title": "ElegantBook",
+	"tags": [],
+	"description": "",
+	"content": " On the occasion of this release, we, ElegantLaTeX Program, want to reintroduce our work to you. We are committed to creating a series of beautiful, elegant, easy to use LaTeX templates for users. The ElegantLaTeX is currently composed of ElegantNote, ElegantBook, ElegantPaper for typesetting notes, books, and working papers respectively.\nThe latest version is available on Github:ElegantBook/releases. This guide describes some settings of this template and how to use it. If you have any other questions, suggestions or comments, please feel free to contact us.\nElegantBook Updates Over these years, we’ve received a lot of feedback from users, with major issues related to font installation, coding support, theorem class environments ﬂoats, theorem cross-page, cross-references, and etc. We really think about these problems, it wasn’t elegant to let the user install the font for visual beauty since users got into a lot of trouble, which went against the concept of our template. So we’ve removed that from the new version, users don’t have to install any fonts. Let’s take a look at the ElegantBook template 3.x updates:\n Remove custom font settings and use the ctex package or system font instead; Add English and Chinese modes（lang=cn/en); PDFLaTeX and XeLaTeX Support; Use the tcolorbox package to re-written the theorem class environments, which can span over pages; Theorem class environments name updated, and cross-references fixed; Color name updated, link color unified; New ElegantLaTeX Logo; New cover and decorations, remove the watermark; Fix appendix; Add gray theme: color=plain; Add code highlighting; Beautify the list environment.  "
+},
+{
 	"uri": "https://elegantlatex.org/en/elegantpaper/fontsettings/",
 	"title": "Font Settings",
 	"tags": [],
 	"description": "Font Settings",
 	"content": " Compile with PDFLaTeX If you choose PDFLaTeX to process your paper, the default article font computer modern has changed to newtx series, and the default font size is set to 11pt . The fonts are settings with:\n newtxtext package for text fonts, similar to times new roman font. newtxmath package for math fonts, close to times package. FiraMono package for typewriter fonts, with option scale=0.8 . ctex package for Chinese fonts, with option scheme=plain .  Compile with XeLaTeX If you choose XeLaTeX to process your paper, I use fontspec package and xeCJK package. I used fonts available in Windows, if you are using Linux or Mac OS, please substitute these fonts with that of your system. The font setting part\n\\RequirePackage{fontenc} \\RequirePackage[no-math]{fontspec} \\setmainfont{Times New Roman}[NFSSFamily=ntxtlf] \\setsansfont{Arial} %\\setmonofont[Scale=0.9]{Courier New} \\RequirePackage{xeCJK} \\RequirePackage{xunicode} \\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun} \\setCJKsansfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi} \\setCJKmonofont[BoldFont={SimHei},ItalicFont={KaiTi},Scale=0.9]{Microsoft YaHei} \\XeTeXlinebreaklocale \u0026quot;zh\u0026quot; \\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt \\RequirePackage{newtxmath}  Other Settings These packages operate perfectly but are inappropriate for big operators, for example \\sum and \\prod, thus, I change these operators back to computer modern font.\nThe \\linespread (controls line spacing) is set to 1.3, and I use microtype to improve the font justiﬁcation. type1cm package is used to remove the font shape and font size warning messages.\n"
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/languages/",
+	"title": "Languages",
+	"tags": [],
+	"description": "Languages",
+	"content": "We deﬁned one option named lang, this option has two alternative values, lang=en (default) or lang=cn. lang=cn will make the caption of ﬁgure/table, abstract name, refname etc. Chinese, while lang=en will keep all these stuff English, as the default article class sets. You can use this option as\n\\documentclass[cn]{elegantbook} \\documentclass[lang=cn]{elegantbook} \\documentclass[en]{elegantbook} \\documentclass[lang=en]{elegantbook}  Remark: You can input Chinese Character in either lang=en or lang=cn. If you are using (lstlisting) environment, and it contains Chinese characters, please use XeLaTeX.\n"
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/colorthemes/",
+	"title": "Color Themes",
+	"tags": [],
+	"description": "Color Themes",
+	"content": "This template contains 4 color themes,they are green (default), cyan, blue, plain, and there is a customization color option nocolor. You can choose green with\n\\documentclass[green]{elegantbook} %or \\documentclass[color=green]{elegantbook}  where plain theme is gray for all theorem class environments and paper structures. If you want to customize the colors, please select nocolor or use color=none , then define the main, second, and third colors in the preamble section as follows:\n\\definecolor{main}{RGB}{70,70,70} \\definecolor{second}{RGB}{115,45,2} \\definecolor{third}{RGB}{0,80,80}  "
 },
 {
 	"uri": "https://elegantlatex.org/en/elegantnote/colorthemes/",
@@ -61,6 +82,13 @@
 	"tags": [],
 	"description": "",
 	"content": "ElegantPaper is designed for writing a working paper, especially for economics students. This template is based on the standard LaTeX article class, which means you can pass the arguments of article class to it (a4paper, 12pt and etc.). It supports different engines, You can choose either PDFLaTeX or XeLaTeX .\nThe goal of this template is to make the writing process easier and more comfortable. You can get rid of all the worries about the format. Just enjoy it! If you have any questions, suggestions or bug reports, you can create issues, pull requests or email us at elegantlatex2e@gmail.com.\nThis work is released under the LaTeX Project Public License, v1.3c or later.\n"
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/displaystyles/",
+	"title": "Display Styles",
+	"tags": [],
+	"description": "Display Styles",
+	"content": "This template contains 2 sets of title display styles,which including hang(default) and display style,\nThe difference is that the chapter heading is displayed on a single line (hang) and on a double line (display) , and this guide uses hang. To change display style\n\\documentclass[hang]{elegantbook} %or \\documentclass[titlestyle=hang]{elegantbook}  "
 },
 {
 	"uri": "https://elegantlatex.org/en/elegantnote/languages/",
@@ -91,6 +119,20 @@
 	"content": "To include a graphic, you can use ﬁgure environment as usual. You can put all your images in the sub directories ( ./image/ , ./img/ , ./ﬁgure/ , ./ﬁg/ ) of your current working directory.\n\\begin{figure}[htbp] \\centering \\includegraphics[width=0.6\\textwidth]{scatter.pdf} \\caption{Scatter Plot Example \\label{fig:scatter}} \\end{figure}  "
 },
 {
+	"uri": "https://elegantlatex.org/en/elegantbook/theoremclassenvironments/",
+	"title": "Theorem Class Environments",
+	"tags": [],
+	"description": "Theorem Class Environments",
+	"content": " In this template, we defined four categories of theorem class environments\n Theorem Environment, including title and contents, numbering within chapter. There are three types depending on the format  deﬁnition environment, the color is main; theorem, lemma, corollary environment, the color is second; proposition environment, the color is third.  Example Environments, including example, exercise, problem environment, auto numering within chapter. Proof Environment, including proof, note environment, they contain introductory symbol (note environment) or ending symbol (proof environment). Conclusion Environments, including conclusion, assumption, property, remark, solution environment, all of these begin with boldfaced words, and the contents are the same as a normal paragraph.  Theorem Class Environments The template uses the tcolorbox package to customize the theorem class environments, it is slightly different from the normal theorem environments. The usage is as follows:\n\\begin{theorem}{\u0026lt;theorem name\u0026gt;}{\u0026lt;label\u0026gt;} The content of theorem. \\end{theorem}  The ﬁrst parameter \u0026lt;theorem name\u0026gt; is the name of the theorem, and the second parameter label is the label used in cross-reference with ref{thm:label}. Note that cross-references must be prefixed with thm:.\nOther theorem class environments with the same usage are:\n   Environment Label text Prefix Cross-reference     definition label def \\ref{def:label}   theorem label thm \\ref{thm:label}   lemma label lem \\ref{lem:label}   corrlary label cor \\ref{cor:label}   proposition label pro \\ref{pro:label}    Cross-reference The other three math environments can be used directly since there are no options for them, the example environment usage:\n\\begin{example} This is the content of example environment. \\end{example}  These are all the same environments, except that\n example, exercise, problem environments numbering within chapter; note with introductory symbol, proof with ending symbol; conclusion environment with boldfaced keywords and normal paragraph content.  "
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/coverlogo/",
+	"title": "Cover and Logo",
+	"tags": [],
+	"description": "Cover and Logo",
+	"content": "The cover image used in this template is from pixabay.com1. The image is completely free and can be used in any circumstance. The cover image size is 1280*1024, when changing the cover, please crop it according to the size of the cover picture strictly. Here is a free online image clipping site: befunky.com.\nThis Logo ratio is 1:1, that is square picture. In the replacement of the picture, please choose the appropriate picture to replace.\n1: Thank ChinaTeX for providing free image source site, and pexels.com is also recommended.\n"
+},
+{
 	"uri": "https://elegantlatex.org/en/elegantpaper/tables/",
 	"title": "Tables",
 	"tags": [],
@@ -112,6 +154,13 @@
 	"content": "This template uses BibTeX to generate the bibliography, the default bibliography style is aer . Let’s take a glance at the citation effect, Chen et al. (2018) use data from a major peer-to-peer lending marketplace in China to study whether female and male investors evaluate loan performance differently.\nIf you want to use BibTeX, you must create a ﬁle named wpref.bib , and add bib items (from Google Scholar, Mendeley, EndNote, and etc.) to wpref.bib ﬁle, and cite the bibkey in the tex ﬁle. The BibTeX will automatically generate the bibliography for you for the reference you cited. If you want to add some noncited reference to the bibliography, you can use\n\\nocite{EINAV2010, Havrylchyk2018}  "
 },
 {
+	"uri": "https://elegantlatex.org/en/elegantbook/lists/",
+	"title": "Lists",
+	"tags": [],
+	"description": "Lists",
+	"content": "This template uses tikz to customize itemize and enumerate environments, the itemize environment customized to the third depth, and enumerate environment customized to fourth depth. The effect is as follows\n"
+},
+{
 	"uri": "https://elegantlatex.org/en/elegantnote/minimalexample/",
 	"title": "Minimal Example",
 	"tags": [],
@@ -124,6 +173,13 @@
 	"tags": [],
 	"description": "Minimal Example",
 	"content": "Here is a minimal example.\n\\documentclass[geye,green,pad,en]{elegantnote} \\title{A Note Example} \\author{ddswhu} \\institute{Elegant\\LaTeX{} Program} \\version{1.00} \\date{\\today} \\begin{document} \\maketitle \\section{Introduction} Example Text. \\end{document}  "
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/bibliography/",
+	"title": "Bibliography",
+	"tags": [],
+	"description": "Bibliography",
+	"content": "This template uses BibTeX to generate the bibliography, the default bibliography style is aer. Let’s take a glance at the citation effect, Chen et al. (2018) use data from a major peer-to-peer lending marketplace in China to study whether female and male investors evaluate loan performance differently.\nIf you want to use BibTeX, you must create a file named reference.bib, and add bib items (from Google Scholar, Mendeley, EndNote, and etc.) to reference.bib file, and cite the bibkey in the tex ﬁle. The BibTeX will automatically generate the bibliography for you for the reference you cited. If you want to add some noncited reference to the bibliography, you can use\n\\nocite{EINAV2010, Havrylchyk2018}  "
 },
 {
 	"uri": "https://elegantlatex.org/en/elegantpaper/minimalexample/",
@@ -131,6 +187,20 @@
 	"tags": [],
 	"description": "Minimal Example",
 	"content": "Here is a minimal example.\n\\documentclass[lang=en]{elegantpaper} % title information \\title{A Working Paper Example} \\author{ddswhu} \\institute{Elegant\\LaTeX{} Group} \\version{1.00} \\date{\\today} \\begin{document} \\maketitle \\begin{abstract} Your abstract goes here. \\keywords{keyword1, keyword2} \\end{abstract} \\section{Introduction} The content of introduction section. \\section{Conclusion} The content of conclusion section. % include the noncited reference \\nocite{ref1, ref2} \\bibliography{wpref} \\end{document}  "
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/preface/",
+	"title": "Preface",
+	"tags": [],
+	"description": "Preface",
+	"content": "If you want to add a preface before the first chapter without changing the number of chapter, you can use it before the first chapter\n\\chapter*{Preface} \\addcontentsline{toc}{chapter}{Preface} \\markboth{Preface}{} The content of Preface.  "
+},
+{
+	"uri": "https://elegantlatex.org/en/elegantbook/minimalexample/",
+	"title": "Minimal Example",
+	"tags": [],
+	"description": "Minimal Example",
+	"content": "Here is a minimal example.\n\\documentclass{elegantbook} % title info \\title{Title} \\subtitle{Subtitle is here} % bio info \\author{Your Name} \\institute{XXX University} \\date{\\today} % extra info \\version{1.00} \\equote{Victory won\\rq t come to us unless we go to it. --- M. Moore} \\logo{logo.png} \\cover{cover.jpg} \\begin{document} \\maketitle \\tableofcontents \\mainmatter \\hypersetup{pageanchor=true} % add preface chapter here if needed \\chapter{Example Chapter Title} The content of chapter one. \\bibliography{reference} \\appendix \\chapter{Appendix Chapter Title} The content of appendix 1. \\end{document}  "
 },
 {
 	"uri": "https://elegantlatex.org/en/categories/",

@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.53" />
+    <meta name="description" content="Display Styles">
+<meta name="author" content="ElegantLaTeX">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Display Styles :: Documentation for ElegantLaTeX Templates</title>
+
+    
+    <link href="/css/nucleus.css?1551372319" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1551372319" rel="stylesheet">
+    <link href="/css/hybrid.css?1551372319" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1551372319" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1551372319" rel="stylesheet">
+    <link href="/css/auto-complete.css?1551372319" rel="stylesheet">
+    <link href="/css/theme.css?1551372319" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1551372319" rel="stylesheet">
+    
+      <link href="/css/theme-blue.css?1551372319" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1551372319"></script>
+
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+     
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    jax: ["input/TeX", "output/HTML-CSS"],
+    extensions: ["tex2jax.js"],
+    tex2jax: {
+        inlineMath: [ ['$', '$'],["\\(","\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[","\\]"]],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+
+    "HTML-CSS": {availableFonts: ["TeX"]}
+});
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+ <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/regular.js" integrity="sha384-V+AkgA1cZ+p3DRK63AHCaXvO68V7B5eHoxl7QVN21zftbkFn/sGAIVR7vmQL3Zhp" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/fontawesome.js" integrity="sha384-treYPdjUrP4rW5q82SnECO7TPVAz4bpas16yuE9F5o7CeBn2YYw1yr5oC8s8Mf8t" crossorigin="anonymous"></script>
+
+<style type="text/css">
+     
+    body {
+  	font-family: Myriad Pro, 微软雅黑, Palatino Linotype, Open Sans,Microsoft Yahei, Myriad Pro, Palatino Linotype, Garamond, Ubuntu, AR PL UMing HK, 微软雅黑, Simsun, serif;
+  	font-size: 18px !important;
+}
+
+code {
+  font-family:  Ubuntu Mono,Fira Mono, Lucida Console, Courier New, Monaco,楷体, Microsoft Yahei, monospace;
+   
+  padding: 2pt 2pt 2pt 2pt;
+  font-size: 100%;
+  line-height: 160% !important;
+}
+#body-inner {
+    margin-top: 2rem;
+}
+
+#body .padding {
+    padding: 1rem 6rem;
+}
+
+pre {
+    padding: 0rem;
+    margin: 0rem 0;
+    border: 0;
+     
+    font-size: 80%;
+    line-height: 160% !important;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:Minion Pro,Palatino Linotype,Microsoft Yahei,黑体,Times New Roman,黑体,Microsoft Yahei,微软雅黑, Microsoft Yahei,  Alegreya, AR PL UMing HK, Open Sans, Arial,sans-serif;
+	text-transform:none;
+	font-weight: bold;
+}
+
+#sidebar #shortcuts h3{
+	font-family: Microsoft Yahei,黑体,微软雅黑, Microsoft Yahei,  Alegreya, AR PL UMing HK, Open Sans, Arial,sans-serif;
+	text-transform:none;
+	font-size: 18px;
+}
+
+#sidebar{
+  font-family: Microsoft Yahei,黑体,微软雅黑, Microsoft Yahei,  Alegreya, AR PL UMing HK, Open Sans, Arial,sans-serif;
+  text-transform:none;
+}
+
+ 
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.6;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+
+#body .padding {
+    padding: auto;
+}
+
+#top-bar-sticky-wrapper{
+  margin-bottom: 2rem;
+}
+
+.searchbox {
+    margin-top: 0.1rem;
+}
+#header-wrapper {
+    border-top: 4px solid #9c6fb6;
+    padding: 1.2rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	 
+  margin: 0.2rem 0 2.0rem 0;
+
+}
+
+body #chapter h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+   
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+   
+  margin: 2rem 0 1rem 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+   
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+h5 {
+  font-size: 1rem;
+   
+  margin: 1rem 0 0.2rem 0;
+}
+
+h6 {
+  font-size: 0.5rem;
+  line-height: 110% !important;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+figcaption h4 {
+    font-weight: 300 !important;
+    opacity: .85;
+    font-size: 1em;
+    text-align: center;
+    margin-top: -1.5em;
+}
+
+
+</style>
+
+  </head>
+  <body class="" data-url="/en/elegantbook/displaystyles/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+
+
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="70%" height="70%" viewBox="0 0 16000 2500" preserveAspectRatio="xMidYMid meet">
+<g id="layer101" fill="#ffffff" stroke="none">
+ <path d="M4355 2494 c-78 -11 -225 -49 -272 -70 -61 -28 -130 -102 -139 -150 -15 -83 26 -151 120 -195 33 -16 70 -29 80 -29 13 0 6 -9 -25 -29 -92 -61 -129 -125 -129 -221 1 -130 80 -236 241 -319 l45 -24 -75 -38 c-133 -66 -203 -144 -241 -267 -83 -267 103 -533 412 -588 105 -19 206 -13 321 21 81 23 102 25 297 25 l210 0 0 75 0 75 -121 0 -121 0 32 37 c61 69 75 114 75 243 0 106 -2 120 -28 173 -55 113 -163 199 -327 258 -58 20 -83 23 -222 24 l-158 0 -35 35 c-59 60 -58 146 4 187 23 16 52 18 253 19 370 2 472 25 569 125 54 56 74 115 73 214 0 77 -4 99 -28 150 -37 77 -120 158 -200 194 -113 52 -232 74 -416 77 -91 1 -178 0 -195 -2z m343 -129 c85 -6 176 -33 225 -67 63 -45 77 -132 27 -178 -50 -47 -107 -55 -390 -55 -218 0 -259 2 -285 16 -62 34 -89 88 -73 146 11 41 85 106 140 122 43 13 215 30 253 25 11 -2 57 -5 103 -9z m-103 -988 c77 -37 111 -117 121 -279 12 -213 -19 -369 -87 -434 -25 -24 -38 -28 -87 -29 -72 0 -111 26 -146 98 -36 73 -49 178 -44 337 6 158 23 217 76 273 52 54 105 65 167 34z"/>
+ <path d="M12570 2411 l0 -38 76 -5 c84 -6 115 -22 149 -79 20 -33 20 -52 20 -799 l0 -765 -23 -36 c-28 -46 -78 -70 -159 -77 -53 -4 -63 -8 -63 -23 0 -18 26 -19 780 -19 l780 0 0 285 0 285 -30 0 c-26 0 -30 -5 -40 -42 -44 -167 -74 -230 -138 -290 -104 -98 -177 -118 -439 -125 l-203 -6 0 373 0 373 72 -8 c121 -11 187 -50 236 -137 34 -60 56 -125 73 -216 12 -61 12 -62 45 -62 l34 0 0 495 0 495 -30 0 c-26 0 -30 -4 -35 -37 -21 -138 -72 -258 -135 -322 -44 -44 -104 -68 -197 -77 l-64 -7 3 349 c3 381 4 386 61 419 45 27 218 32 357 11 214 -32 371 -149 454 -339 47 -105 52 -97 -68 -97 l-106 0 0 -38 c0 -38 0 -38 53 -49 96 -20 146 -51 253 -157 114 -114 517 -603 511 -620 -3 -6 -51 -78 -107 -161 -57 -82 -153 -224 -215 -315 -240 -356 -269 -396 -305 -432 -22 -21 -56 -41 -81 -48 -24 -7 -50 -14 -56 -16 -7 -2 -13 -15 -13 -29 l0 -25 480 0 480 0 0 25 c0 24 -3 25 -55 25 -62 0 -131 24 -145 51 -24 43 -11 76 88 226 54 81 129 194 166 251 l66 103 113 -138 c243 -298 270 -360 192 -437 -27 -27 -48 -38 -95 -47 -53 -10 -60 -14 -60 -35 l0 -24 340 0 340 0 0 24 c0 21 -6 25 -59 34 -105 19 -164 61 -272 192 -29 36 -56 67 -59 70 -3 3 -37 43 -75 90 -39 47 -80 96 -92 110 -75 87 -196 237 -200 247 -2 6 75 130 173 275 97 144 218 324 267 398 102 152 166 239 211 289 34 36 118 81 154 81 19 0 22 5 22 40 l0 40 -460 0 -460 0 0 -29 c0 -28 3 -30 48 -37 128 -18 141 -62 59 -192 -107 -168 -302 -450 -309 -446 -4 3 -74 87 -155 187 -217 267 -245 313 -223 367 21 50 75 80 159 87 70 6 71 6 71 34 l0 29 -234 0 -235 0 -6 48 c-6 47 -33 244 -57 417 l-13 90 -807 3 -808 2 0 -39z"/>
+ <path d="M3161 1900 c-184 -39 -295 -127 -377 -296 -108 -225 -93 -585 33 -787 59 -96 167 -191 266 -236 111 -50 286 -54 387 -7 103 48 208 154 252 256 29 66 57 185 64 273 l7 77 -352 0 -351 0 0 36 c0 58 30 174 65 249 38 83 99 155 163 193 41 23 58 27 128 27 72 0 86 -3 129 -30 44 -27 147 -135 156 -164 4 -10 10 -10 32 0 33 15 33 19 3 74 -66 118 -150 218 -219 262 -104 66 -271 97 -386 73z m276 -957 c-5 -140 -22 -209 -62 -263 -32 -43 -60 -59 -105 -59 -47 0 -77 18 -111 68 -51 77 -71 146 -77 269 l-5 112 183 0 183 0 -6 -127z"/>
+ <path d="M5590 1891 c-226 -48 -277 -321 -96 -505 71 -72 180 -141 394 -249 l184 -92 -4 -145 c-4 -169 -14 -198 -88 -238 -37 -20 -55 -23 -105 -19 -65 5 -139 36 -149 62 -12 34 -5 61 29 103 58 74 66 131 29 204 -8 15 -34 39 -59 54 -40 23 -54 26 -119 22 -65 -3 -79 -7 -112 -34 -67 -54 -79 -78 -78 -153 0 -57 5 -76 33 -124 80 -141 265 -230 506 -244 117 -7 216 7 292 42 63 29 145 103 181 165 l27 45 5 435 c5 395 7 438 23 463 22 34 47 34 87 1 l31 -27 21 21 21 20 -32 41 c-85 107 -177 156 -291 155 -135 -1 -216 -60 -244 -176 l-6 -28 -53 43 c-150 122 -313 182 -427 158z m432 -282 l48 -31 0 -216 c0 -208 -1 -215 -18 -199 -10 10 -22 17 -26 17 -14 0 -144 110 -173 147 -54 68 -73 113 -73 173 0 63 29 115 78 138 40 18 108 6 164 -29z"/>
+ <path d="M8663 1882 c-92 -33 -151 -84 -199 -172 -18 -33 -19 -66 -22 -512 l-3 -478 -89 0 -90 0 0 -27 c0 -20 9 -34 33 -49 72 -48 228 -186 294 -261 39 -45 99 -124 134 -177 49 -76 68 -96 86 -96 l23 0 0 230 0 230 160 0 160 0 0 75 0 75 -160 0 -160 0 0 448 c0 275 4 461 10 484 13 46 52 78 95 78 39 0 92 -39 131 -96 27 -40 30 -41 52 -26 28 18 24 35 -34 122 -70 107 -162 159 -294 166 -56 4 -88 0 -127 -14z"/>
+ <path d="M1870 1862 c0 -25 5 -30 47 -43 28 -9 54 -25 67 -42 21 -28 21 -37 24 -803 2 -533 -1 -787 -8 -815 -14 -51 -38 -75 -89 -89 -36 -9 -41 -14 -41 -40 l0 -30 285 0 284 0 3 873 c3 998 -4 922 96 948 37 10 42 15 42 40 l0 29 -355 0 -355 0 0 -28z"/>
+ <path d="M7480 1851 c0 -37 2 -39 38 -45 47 -8 81 -36 93 -78 12 -42 12 -889 0 -920 -5 -13 -20 -35 -34 -50 -22 -24 -34 -28 -80 -28 -58 0 -102 24 -158 86 -62 69 -59 46 -59 437 0 464 14 536 107 553 23 4 33 12 33 25 0 18 -13 19 -320 19 l-320 0 0 -30 c0 -24 4 -30 23 -30 29 0 82 -33 99 -62 10 -18 14 -125 16 -475 4 -570 1 -590 -95 -615 -38 -9 -43 -14 -43 -39 l0 -29 250 0 250 0 0 81 0 81 66 -61 c151 -138 337 -176 491 -99 75 37 136 122 166 228 5 19 12 240 16 490 5 416 8 458 24 483 18 28 40 41 90 51 22 5 27 12 27 36 l0 30 -340 0 -340 0 0 -39z"/>
+ <path d="M0 1841 l0 -28 78 -5 c87 -6 130 -25 159 -73 17 -28 18 -73 21 -795 2 -730 1 -767 -16 -800 -27 -50 -86 -80 -172 -87 -65 -5 -70 -8 -70 -29 l0 -24 785 0 785 0 0 275 0 275 -33 0 c-33 0 -33 0 -51 -74 -38 -161 -106 -253 -231 -312 -86 -41 -181 -54 -387 -54 l-148 0 0 376 0 377 73 -5 c119 -8 193 -60 247 -173 29 -63 60 -182 60 -234 0 -28 3 -31 30 -31 l30 0 0 495 0 495 -28 0 c-27 0 -28 -2 -40 -82 -16 -103 -68 -217 -125 -276 -44 -45 -93 -64 -194 -77 l-53 -7 0 355 0 355 26 31 c38 45 85 54 259 48 169 -6 236 -21 335 -73 132 -70 230 -194 284 -361 16 -48 20 -53 47 -53 l30 0 -7 48 c-4 26 -23 160 -43 297 l-36 250 -807 3 -808 2 0 -29z"/>
+ <path d="M9210 1830 c0 -18 7 -20 72 -20 72 0 141 -22 168 -55 9 -10 12 -222 12 -822 l0 -808 -32 -27 c-37 -31 -98 -48 -169 -48 -48 0 -51 -2 -51 -25 l0 -25 500 0 500 0 0 24 c0 22 -4 24 -72 28 -81 5 -145 32 -170 70 -33 51 -38 157 -38 853 0 733 -1 725 50 770 21 19 36 20 254 20 219 0 234 -1 289 -24 117 -46 206 -144 272 -296 28 -64 32 -81 20 -83 -25 -6 -18 -42 8 -42 18 0 25 -9 37 -52 14 -50 17 -53 52 -58 l37 -5 -47 -117 -47 -118 -226 0 -227 0 -31 73 c-44 106 -57 161 -46 193 15 40 57 66 114 72 46 4 51 7 51 28 l0 24 -215 0 -215 0 0 -25 c0 -17 6 -25 18 -25 22 0 79 -35 104 -63 27 -31 97 -179 228 -482 62 -143 136 -314 165 -380 29 -66 78 -180 110 -252 32 -73 63 -133 69 -133 6 0 48 85 93 188 45 103 135 306 198 452 217 494 239 543 269 588 32 49 78 82 114 82 17 0 22 6 22 25 l0 25 -255 0 -255 0 -4 23 c-9 41 -46 385 -46 426 l0 41 -840 0 c-833 0 -840 0 -840 -20z m1600 -948 c0 -5 -18 -51 -41 -103 -23 -52 -61 -141 -85 -198 -24 -56 -47 -107 -50 -113 -5 -8 -194 394 -194 414 0 5 83 8 185 8 102 0 185 -4 185 -8z"/>
+ <path d="M11470 1830 c0 -18 7 -20 73 -20 86 0 151 -27 179 -76 15 -26 16 -41 8 -115 -6 -46 -10 -400 -10 -793 l0 -708 -127 5 c-76 3 -148 11 -178 21 -103 32 -188 140 -231 289 l-23 82 0 -257 -1 -258 830 0 830 0 0 255 0 255 -24 0 c-20 0 -26 -9 -46 -72 -36 -113 -74 -181 -129 -230 -81 -73 -107 -82 -263 -86 l-137 -4 -3 798 c-4 897 -9 830 72 872 33 16 61 22 112 22 61 0 68 2 68 20 0 20 -7 20 -500 20 -493 0 -500 0 -500 -20z"/>
+ </g>
+
+</svg>
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1551372319"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1551372319"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/elegantlatex.org\/\/en";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1551372319"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/elegantnote/" title="ElegantNote" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/elegantnote/">
+          <b>1. </b>ElegantNote
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/goodforeyemode/" title="Good for Eye Mode" class="dd-item ">
+        <a href="/en/elegantnote/goodforeyemode/">
+        Good for Eye Mode
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/deviceoptions/" title="Device Options" class="dd-item ">
+        <a href="/en/elegantnote/deviceoptions/">
+        Device Options
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/colorthemes/" title="Color Themes" class="dd-item ">
+        <a href="/en/elegantnote/colorthemes/">
+        Color Themes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/languages/" title="Languages" class="dd-item ">
+        <a href="/en/elegantnote/languages/">
+        Languages
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/compilationmethods/" title="Compilation Methods" class="dd-item ">
+        <a href="/en/elegantnote/compilationmethods/">
+        Compilation Methods
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/theoremclassenvironments/" title="Theorem Class Environments" class="dd-item ">
+        <a href="/en/elegantnote/theoremclassenvironments/">
+        Theorem Class Environments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/minimalexample/" title="Minimal Example" class="dd-item ">
+        <a href="/en/elegantnote/minimalexample/">
+        Minimal Example
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantnote/minimalexample/" title="Minimal Example" class="dd-item ">
+        <a href="/en/elegantnote/minimalexample/">
+        Minimal Example
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/elegantbook/" title="ElegantBook" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/en/elegantbook/">
+          <b>2. </b>ElegantBook
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/compilationmethods/" title="Compilation Methods" class="dd-item ">
+        <a href="/en/elegantbook/compilationmethods/">
+        Compilation Methods
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/languages/" title="Languages" class="dd-item ">
+        <a href="/en/elegantbook/languages/">
+        Languages
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/colorthemes/" title="Color Themes" class="dd-item ">
+        <a href="/en/elegantbook/colorthemes/">
+        Color Themes
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/displaystyles/" title="Display Styles" class="dd-item active">
+        <a href="/en/elegantbook/displaystyles/">
+        Display Styles
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/theoremclassenvironments/" title="Theorem Class Environments" class="dd-item ">
+        <a href="/en/elegantbook/theoremclassenvironments/">
+        Theorem Class Environments
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/coverlogo/" title="Cover and Logo" class="dd-item ">
+        <a href="/en/elegantbook/coverlogo/">
+        Cover and Logo
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/lists/" title="Lists" class="dd-item ">
+        <a href="/en/elegantbook/lists/">
+        Lists
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/bibliography/" title="Bibliography" class="dd-item ">
+        <a href="/en/elegantbook/bibliography/">
+        Bibliography
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/preface/" title="Preface" class="dd-item ">
+        <a href="/en/elegantbook/preface/">
+        Preface
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantbook/minimalexample/" title="Minimal Example" class="dd-item ">
+        <a href="/en/elegantbook/minimalexample/">
+        Minimal Example
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/en/elegantpaper/" title="ElegantPaper" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/en/elegantpaper/">
+          <b>3. </b>ElegantPaper
+          
+            <i class="fas read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/languages/" title="Languages" class="dd-item ">
+        <a href="/en/elegantpaper/languages/">
+        Languages
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/fontsettings/" title="Font Settings" class="dd-item ">
+        <a href="/en/elegantpaper/fontsettings/">
+        Font Settings
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/customcommands/" title="Custom Commands" class="dd-item ">
+        <a href="/en/elegantpaper/customcommands/">
+        Custom Commands
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/lists/" title="Lists" class="dd-item ">
+        <a href="/en/elegantpaper/lists/">
+        Lists
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/graphics/" title="Graphics" class="dd-item ">
+        <a href="/en/elegantpaper/graphics/">
+        Graphics
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/tables/" title="Tables" class="dd-item ">
+        <a href="/en/elegantpaper/tables/">
+        Tables
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/bibliography/" title="Bibliography" class="dd-item ">
+        <a href="/en/elegantpaper/bibliography/">
+        Bibliography
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/en/elegantpaper/minimalexample/" title="Minimal Example" class="dd-item ">
+        <a href="/en/elegantpaper/minimalexample/">
+        Minimal Example
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://elegantlatex.org/en/installation"><i class='fas fa-fw fa-user-cog'></i> Installation</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/ElegantLaTeX"><i class='fab fa-fw fa-github'></i> Github</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://weibo.com/elegantlatex"><i class='fab fa-fw fa-weibo'></i> Weibo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://elegantlatex.org/en/wechat"><i class='fab fa-fw fa-weixin'></i> WeChat</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="/en/elegantbook/displaystyles/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="cn" value="/cn/elegantbook/displaystyles/">中文</option>
+                    
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <center><p>Elegant LaTeX, Elegant Life!</p></center>
+<center><p>Built with <a href="http://gohugo.io/">Hugo</a> and hugo-theme-learn <a href="https://github.com/matcornic/hugo-theme-learn"></p></center>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/en/'>ElegantLaTeX Templates</a> > <a href='/en/elegantbook/'>ElegantBook</a> > Display Styles
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Display Styles</h1>
+          
+
+        
+
+
+<p>This template contains 2 sets of <em>title display styles</em>,which including <code>hang</code>(default) and display style,</p>
+
+<p>The difference is that the chapter heading is displayed on a single line (<code>hang</code>) and on a double line (<code>display</code>) , and this guide uses <code>hang</code>. To change display style</p>
+
+<pre><code class="language-tex">\documentclass[hang]{elegantbook} %or
+\documentclass[titlestyle=hang]{elegantbook}
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/en/elegantbook/colorthemes/" title="Color Themes"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/en/elegantbook/theoremclassenvironments/" title="Theorem Class Environments" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+   
+    <script src="/js/perfect-scrollbar.min.js?1551372319"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1551372319"></script>
+    <script src="/js/jquery.sticky.js?1551372319"></script>
+    <script src="/js/featherlight.min.js?1551372319"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1551372319"></script>
+    
+    <script src="/js/modernizr.custom.71422.js?1551372319"></script>
+    <script src="/js/learn.js?1551372319"></script>
+    <script src="/js/hugo-learn.js?1551372319"></script>
+
+    <link href="/mermaid/mermaid.css?1551372319" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1551372319"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+
+
+
+<link rel="stylesheet" href="/css/style/atom-one-dark-reasonable.css">
+<script src="/css/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+  </body>
+</html>
+

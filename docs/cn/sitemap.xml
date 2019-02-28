@@ -31,6 +31,20 @@
   </url>
   
   <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/compilationmethods/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/compilationmethods/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/compilationmethods/"
+                />
+  </url>
+  
+  <url>
     <loc>https://elegantlatex.org/cn/elegantpaper/languages/</loc>
     <xhtml:link
                 rel="alternate"
@@ -87,6 +101,20 @@
   </url>
   
   <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/languages/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/languages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/languages/"
+                />
+  </url>
+  
+  <url>
     <loc>https://elegantlatex.org/cn/elegantpaper/</loc>
     <xhtml:link
                 rel="alternate"
@@ -111,6 +139,20 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://elegantlatex.org/cn/elegantpaper/customcommands/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/colorthemes/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/colorthemes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/colorthemes/"
                 />
   </url>
   
@@ -143,6 +185,20 @@
   </url>
   
   <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/displaystyles/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/displaystyles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/displaystyles/"
+                />
+  </url>
+  
+  <url>
     <loc>https://elegantlatex.org/cn/elegantnote/languages/</loc>
     <xhtml:link
                 rel="alternate"
@@ -153,6 +209,20 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://elegantlatex.org/cn/elegantnote/languages/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/theoremclassenvironments/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/theoremclassenvironments/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/theoremclassenvironments/"
                 />
   </url>
   
@@ -199,6 +269,20 @@
   </url>
   
   <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/coverlogo/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/coverlogo/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/coverlogo/"
+                />
+  </url>
+  
+  <url>
     <loc>https://elegantlatex.org/cn/elegantpaper/tables/</loc>
     <xhtml:link
                 rel="alternate"
@@ -209,6 +293,20 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://elegantlatex.org/cn/elegantpaper/tables/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/lists/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/lists/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/lists/"
                 />
   </url>
   
@@ -241,6 +339,20 @@
   </url>
   
   <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/bibliography/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/bibliography/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/bibliography/"
+                />
+  </url>
+  
+  <url>
     <loc>https://elegantlatex.org/cn/elegantpaper/minimalexample/</loc>
     <xhtml:link
                 rel="alternate"
@@ -251,6 +363,34 @@
                 rel="alternate"
                 hreflang="cn"
                 href="https://elegantlatex.org/cn/elegantpaper/minimalexample/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/preface/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/preface/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/preface/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://elegantlatex.org/cn/elegantbook/minimalexample/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://elegantlatex.org/en/elegantbook/minimalexample/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://elegantlatex.org/cn/elegantbook/minimalexample/"
                 />
   </url>
   
