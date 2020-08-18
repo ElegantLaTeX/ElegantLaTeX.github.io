@@ -1,10 +1,4 @@
----
-title: Preface
-description : "Preface"
-weight: 9
----
-
-If you want to add a preface before the first chapter without changing the number of chapter, you can use it before the first chapter
+If you want to add a preface before the first chapter with the number of chapter unchanged, please add the preface in the following way:
 
 ```tex
 \chapter*{Preface}

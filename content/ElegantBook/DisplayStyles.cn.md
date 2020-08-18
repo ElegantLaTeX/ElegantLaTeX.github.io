@@ -1,7 +1,7 @@
 ---
-title: 章标题显示风格
-description : "章标题显示风格"
-weight: 4
+title: About Pull Request
+description : "About Pull Request"
+weight: 8
 ---
 
 本模板内置 2 套章标题显示风格，包含 `hang`（默认）与 `display` 两种风格，区

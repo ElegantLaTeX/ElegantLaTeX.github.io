@@ -1,11 +1,10 @@
 ---
-title: Cover and Logo
-description : "Cover and Logo"
-weight: 6
+title: About Pull Request
+description : "About Pull Request"
+weight: 8
 ---
 
-The cover image used in this template is from [pixabay.com](https://pixabay.com/en/tea-time-poetry-coffee-reading-3240766/)<sup>[1](#myfootnote1)</sup>. The image is completely free and can be used in any circumstance. The cover image size is 1280*1024, when changing the cover, please crop it according to the size of the cover picture __strictly__. Here is a free online image clipping site: [befunky.com](https://www.befunky.com/create/crop-photo/).
+The cover image used in this template is from [pixabay.com](https://pixabay.com/en/tea-time-poetry-coffee-reading-3240766/) (Thank ChinaTeX for providing free image source, [pexels.com](https://www.pexels.com/) is strongly recommended.). The image is completely free and can be used under any circumstance. The cover image size is 1280 X 1024. If you would like to change the cover, please crop it according to the size of the cover picture strictly.One free online image clipping site: [befunky.com](https://www.befunky.com/create/crop-photo/).
 
-This Logo ratio is 1:1, that is square picture. In the replacement of the picture, please choose the appropriate picture to replace.
+Aspect ratio of the logo is 1:1 in this guide, i.e. a square picture. To replace the logo, do remember to choose the appropriate picture.
 
-<a name="myfootnote1">1</a>: Thank ChinaTeX for providing free image source site, and [pexels.com](https://www.pexels.com/) is also recommended.

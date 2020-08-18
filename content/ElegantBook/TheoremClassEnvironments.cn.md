@@ -1,38 +1,35 @@
----
-title: 定理类环境
-description : "定理类环境"
-weight: 5
----
+在我们这个模板中，我们定义了两种不同的定理模式（mode），包括简单模式（simple）和炫彩模式（fancy），默认为 fancy 模式，不同模式的选择为
+
+```tex
+\documentclass[simple]{elegantbook} %or
+\documentclass[mode=simple]{elegantbook}
+```
 
 在我们这个模板中，定义了四大类环境
 
 + __定理类环境__：包含标题和内容两部分，全部定理类环境的编号均以章节编号。根据格式的不同分为 3 种
-    + _definition_ 环境，颜色为 main；
-    + _theorem_ 、_lemma_ 、_corollary_ 环境，颜色为 second；
+    + definition 环境，颜色为 main；
+    + theorem、lemma、corollary 环境，颜色为 second；
     + proposition 环境，颜色为 third。
-+ __示例类环境__：有 _example_ 、_exercise_ 、_problem_ 环境（对应于例，练习，例题），自动编号，编号以章节为单位。
-+ __证明类环境__：有 _proof_ 、_note_ 环境，特点是，有引导符或者结尾符，note 环境有引导符号，proof 环境有证明完毕符号。
-+ __结论类环境__：有 _conclusion_ 、_assumption_ 、_property_ 、_remark_ 、_solution_ 环境，三者均以粗体的引导词为开头，和普通段落格式一致。
++ __示例类环境__：有 example、exercise、problem 环境（对应于例，练习，例题），自动编号，编号以章节为单位。
++ __证明类环境__：，有 proof、note 环境，特点是，有引导符或者结尾符，note 环境有引导符号，proof 环境有证明完毕符号。
++ __结论类环境__：有 conclusion、assumption、property，remark、solution 环境，三者均以粗体的引导词为开头，和普通段落格式一致。
 
-__评论：__ 在选用 `lang=cn` 时，定理类环境的引导词全部会改为中文。
-
-##  定理类环境的使用
+###  定理类环境的使用
 
 由于本模板使用了 tcolorbox 宏包来定制定理类环境，所以和普通的定理环境的使用有些许区别，定理的使用方法如下：
 
 ```tex
-\begin{theorem}{<theorem name>}{<label>}
+\begin{theorem}{theorem name}{label}
 The content of theorem.
 \end{theorem}
 ```
 
-第一个必选项 `<theorem name>` 是定理的名字，第二个必选项 `<label>` 是交叉引
-用时所用到的标签，交叉引用的方法为 `\ref{thm:label}`。请注意，交叉引用时必
-须加上前缀 `thm`:。其他相同用法的定理类环境有：
+第一个必选项 `theorem name` 是定理的名字，第二个必选项 `label` 是交叉引用时所用到的标签，交叉引用的方法为 `\ref{thm:label}`。请注意，交叉引用时必须加上前缀 `thm:`。其他相同用法的定理类环境有：
 
 | 环境名       | 标签名  | 前缀  | 交叉引用            |
 |-------------|--------|------|-------------------|
-| definition  | label  | def  | `\ref{def:label}` | 
+| definition  | label  | def  | `\ref{def:label}` |
 | theorem     | label  | thm  | `\ref{thm:label}` |
 | lemma       | label  | lem  | `\ref{lem:label}` |
 | corrlary    | label  | cor  | `\ref{cor:label}` |
